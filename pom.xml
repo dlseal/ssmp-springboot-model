@@ -13,7 +13,6 @@
 		<mybatis-plus-version>2.3</mybatis-plus-version>
 		<mysql-connector-version>5.1.28</mysql-connector-version>
 		<druid-version>1.1.10</druid-version>
-		<jstl-version>1.2</jstl-version>
 		<junit.version>4.12</junit.version>
 	</properties>
 	<parent>
@@ -79,25 +78,12 @@
 			<version>${druid-version}</version>
 		</dependency>
 
-		<!-- JSP相关 -->
-		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>${jstl-version}</version>
-		</dependency>
-
 		<!-- SpringBoot事物管理器 自动配置 DataSourceTransactionManager -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 
-		<!-- 解析JSP -->
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
-		</dependency>
 		<!-- junit 测试 -->
 		<dependency>
 			<groupId>junit</groupId>

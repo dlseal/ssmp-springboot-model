@@ -24,7 +24,7 @@ public class CodeGenerator {
 		GlobalConfig config = new GlobalConfig();
 		config.setActiveRecord(true) // 是否支持AR模式
 				.setAuthor("hy") // 作者
-				.setOutputDir("D:\\workspace\\easyshop\\src\\main\\java") // 生成路径
+				.setOutputDir("D:\\workspace\\ssmp-springboot-model\\src\\main\\java") // 生成路径
 				.setFileOverride(true) // 文件覆盖
 				.setIdType(IdType.AUTO) // 主键策略
 				.setServiceName("%sService") // 设置生成的service接口的名字的首字母是否为I
@@ -49,10 +49,10 @@ public class CodeGenerator {
 		
 		//4. 包名策略配置 
 		PackageConfig pkConfig = new PackageConfig();
-		pkConfig.setParent("com.easyshop")
+		pkConfig.setParent("com.ssm")
 						.setMapper("mapper")
 						.setService("service")
-						.setController("controller")
+						.setController("web")
 						.setEntity("bean")
 						.setXml("mapper");
 
